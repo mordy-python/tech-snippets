@@ -1,0 +1,39 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Mordy's Tech Blog"
+theme = "mixedpaper"
+pygmentsUseClasses = true
+
+disqusShortname = "tech-snippets"
+
+[ params ]
+description = "A small blog where I post random snippets of my computer and coding knowledge"
+showReadMore = false
+mainSections = [
+"posts",
+]
+listPaginate = 20
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 1
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 2
+
+[[menu.main]]
+name = "Archives"
+identifier = "archives"
+url = "/archives/"
+weight = 3
+
+[privacy]
+[privacy.twitter]
+disable = false
+enableDNT = false
+simple = false
