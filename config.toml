@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://tech-snippets.web.app/"
 languageCode = "en-us"
 title = "Mordy's Tech Blog"
 theme = "mixedpaper"
