@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>info on Mordy&#39;s Tech Snippets</title>
-    <link>https://tech-snippets--test-rk6d09j8.web.app/tags/info/</link>
+    <link>https://tech-snippets.web.app/tags/info/</link>
     <description>Recent content in info on Mordy&#39;s Tech Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Jun 2021 11:49:42 -0400</lastBuildDate><atom:link href="https://tech-snippets--test-rk6d09j8.web.app/tags/info/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Jun 2021 11:49:42 -0400</lastBuildDate><atom:link href="https://tech-snippets.web.app/tags/info/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://tech-snippets--test-rk6d09j8.web.app/about/</link>
+      <link>https://tech-snippets.web.app/about/</link>
       <pubDate>Thu, 24 Jun 2021 11:49:42 -0400</pubDate>
       
-      <guid>https://tech-snippets--test-rk6d09j8.web.app/about/</guid>
+      <guid>https://tech-snippets.web.app/about/</guid>
       <description>About Mordy Hi, I&amp;rsquo;m Mordy, the author of this blog.</description>
     </item>
     

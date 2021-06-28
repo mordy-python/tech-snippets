@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Mordy&#39;s Tech Snippets</title>
-    <link>https://tech-snippets--test-rk6d09j8.web.app/categories/</link>
+    <link>https://tech-snippets.web.app/categories/</link>
     <description>Recent content in Categories on Mordy&#39;s Tech Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://tech-snippets--test-rk6d09j8.web.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://tech-snippets.web.app/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

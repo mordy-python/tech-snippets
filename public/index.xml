@@ -2,17 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mordy&#39;s Tech Snippets</title>
-    <link>https://tech-snippets--test-rk6d09j8.web.app/</link>
+    <link>https://tech-snippets.web.app/</link>
     <description>Recent content on Mordy&#39;s Tech Snippets</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Jun 2021 11:49:42 -0400</lastBuildDate><atom:link href="https://tech-snippets--test-rk6d09j8.web.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Jun 2021 12:02:50 -0400</lastBuildDate><atom:link href="https://tech-snippets.web.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customizing your Bash Prompt Pt. 1</title>
+      <link>https://tech-snippets.web.app/posts/customizing-the-terminal/</link>
+      <pubDate>Thu, 24 Jun 2021 12:02:50 -0400</pubDate>
+      
+      <guid>https://tech-snippets.web.app/posts/customizing-the-terminal/</guid>
+      <description>How to customize your Bash Prompt Part 1 If you&amp;rsquo;re a developer there&amp;rsquo;s a big chance that you&amp;rsquo;re familiar with the terminal. The terminal&amp;rsquo;s used for:
+ Git  git push git pull git commit   Running code  python main.py gcc/g++ main.cpp   Editing files  nano ~/.bashrc    You get the idea; the terminal&amp;rsquo;s a big part of a developer&amp;rsquo;s day, and today, I&amp;rsquo;m going to show you how to customize it.</description>
+    </item>
+    
     <item>
       <title>About</title>
-      <link>https://tech-snippets--test-rk6d09j8.web.app/about/</link>
+      <link>https://tech-snippets.web.app/about/</link>
       <pubDate>Thu, 24 Jun 2021 11:49:42 -0400</pubDate>
       
-      <guid>https://tech-snippets--test-rk6d09j8.web.app/about/</guid>
+      <guid>https://tech-snippets.web.app/about/</guid>
       <description>About Mordy Hi, I&amp;rsquo;m Mordy, the author of this blog.</description>
     </item>
     

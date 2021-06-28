@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
+<head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
 
   <title>
-    Customizing your Bash Prompt | Mordy&#39;s Tech Snippets
+    Customizing your Bash Prompt Pt. 1 | Mordy&#39;s Tech Snippets
   </title>
 
   
@@ -35,8 +35,9 @@
   
 </head>
 
-    <body>
-        <header id="header">
+
+<body>
+    <header id="header">
   <div class="header_container">
     <h1 class="sitetitle">
       <a href="https://tech-snippets.web.app/" title="Mordy&#39;s Tech Snippets">Mordy&#39;s Tech Snippets</a>
@@ -65,15 +66,21 @@
   </div>
 </header>
 
-        
+    
 <section id="main">
   <article class="post content">
-    <h2 class="title">Customizing your Bash Prompt</h2>
+    <h2 class="title">Customizing your Bash Prompt Pt. 1</h2>
     <div class="post_content">
-      <h4 id="how-to-customize-your-bash-prompt">How to customize your Bash Prompt</h4>
+      <h4 id="how-to-customize-your-bash-prompt-part-1">How to customize your Bash Prompt Part 1</h4>
 <p>If you&rsquo;re a developer there&rsquo;s a big chance that you&rsquo;re familiar with the terminal. The terminal&rsquo;s used for:</p>
 <ul>
-<li>Git</li>
+<li>Git
+<ul>
+<li><code>git push</code></li>
+<li><code>git pull</code></li>
+<li><code>git commit</code></li>
+</ul>
+</li>
 <li>Running code
 <ul>
 <li><code>python main.py</code></li>
@@ -86,8 +93,8 @@
 </ul>
 </li>
 </ul>
-<p>You get the idea, the terminal&rsquo;s a big part of a developers day and today, I&rsquo;m going to show you how to customize it.
-If you want to make temporary changes then you can set the PS1 environment variable for only that session, for permanent changes you can edit the PS1 variable in your <code>~/.bashrc</code> file. My terminal currently looks like this. <img src="../static/small_term.jpg" alt="Terminal"></p>
+<p>You get the idea; the terminal&rsquo;s a big part of a developer&rsquo;s day, and today, I&rsquo;m going to show you how to customize it.
+If you want to make temporary changes, you can set the PS1 environment variable for only that session; for permanent changes, you can edit the PS1 variable in your <code>~/.bashrc</code> file. My terminal currently looks like this. <img src="../../small_term.jpg" alt="Terminal"></p>
 <p>My prompt has:</p>
 <ul>
 <li>Date</li>
@@ -96,36 +103,40 @@ If you want to make temporary changes then you can set the PS1 environment varia
 <li>Current directory enclosed in angle brackets</li>
 <li>The git master branch name in parentheses</li>
 </ul>
-<p>My background color theme is from <a href="https://github.com/malteger/gitbash_mintty_solarized">this github repo</a> but the prompt I customized myself.</p>
+<p>My background color theme is from <a href="https://github.com/malteger/gitbash_mintty_solarized">this GitHub repo</a>, but the prompt I customized myself.</p>
 <h5 id="ok-on-to-the-prompt">Ok, on to the prompt</h5>
-<p>The prompt string in your <code>~/.bashrc</code> will start off with <code>${debian_chroot:+($debian_chroot)}</code> but we can ignore that. If you&rsquo;ve never customized the prompt it will look like <code>PS1=&quot;\u@\h:\w$ &quot;</code> these are escape sequences that tell bash what to put in the prompt.</p>
+<p>The prompt string in your <code>~/.bashrc</code> will start with <code>${debian_chroot:+($debian_chroot)}</code>, but we can ignore that. If you&rsquo;ve never customized the prompt, it will look like <code>PS1=&quot; \u@\h:\w$&quot;</code> these are escape sequences that tell bash what to put in the prompt.</p>
 <p>What the escape sequences mean:</p>
 <ul>
-<li>\u means the logged in user&rsquo;s username</li>
-<li>\h is the hostname of the computer</li>
-<li>\w is the current working directory</li>
+<li><code>\u</code> means the logged-in user&rsquo;s username</li>
+<li><code>\h</code> is the hostname of the computer</li>
+<li><code>\w</code> is the current working directory</li>
 </ul>
-<p>so <code>&quot;\u@\h:\w $&quot;</code> becomes <code>username@computername:workingdir$</code>. To add the date, time, customize the working dir, and add colors all we need to do is add more escape sequences.</p>
-<p>The escape sequence for the date is <code>\d</code> the date format will be <code>Day of week Month Day</code></p>
-<p>There are 3 different escape sequences for time</p>
+<p>so <code>&quot;\u@\h:\w $&quot;</code> becomes <code>username@computername:workingdir$</code>. To add the date, time, customize the working dir, and add colors, we need to add more escape sequences.</p>
+<p>The escape sequence for the date is <code>\ d' the date format will be</code>Day of week Month Day`</p>
+<p>After using <code>\ d', my prompt looks like</code>Thu Jun 24 jwald@Momo-pc:~/blog$`</p>
+<p>There are three different escape sequences for time.</p>
 <ul>
 <li><code>\T</code>
 <ul>
-<li>This escape sequence will show the time in H:M:S format with the hour in 12 hour format</li>
+<li>This escape sequence will show the time in H:M:S format with the hour in 12-hour format</li>
 </ul>
 </li>
 <li><code>\t</code>
 <ul>
-<li>This escape sequence will show the time in H:M:S format with the hour in 24 hour format</li>
+<li>This escape sequence will show the time in H:M:S format with the hour in 24-hour format</li>
 </ul>
 </li>
-<li><code>\\@</code>
+<li><code>\@</code>
 <ul>
-<li>This escape sequence will show the time in H:M format along with AM or PM the hour is in 12 hour format</li>
+<li>This escape sequence will show the time in H:M format along with AM or PM; the hour is in 12-hour format</li>
 </ul>
 </li>
 </ul>
-<p>I recommend keeping user@host as is and maybe only change the color</p>
+<p>I picked the <code>\@</code> escape sequence, so now my prompt is <code>Thu Jun 24 12:53 jwald@Momo-pc:~/blog$</code>, and the prompt string is <code>PS1=&quot; \d \@ \u@\h:\w$&quot;</code></p>
+<p>My terminal looks like this now <img src="../../term_now.jpg" alt="Terminal"></p>
+<p>The file path doesn&rsquo;t look that amazing. It seems a little cramped, so let&rsquo;s customize that. I&rsquo;m going to add angle brackets &lt; and &gt; around the current directory path. Remember that <code>\w</code> is the working directory, so I&rsquo;m going to change my prompt string to look like this <code>PS1=&quot; \d \@ \u@\h:&lt;\w&gt;$&quot;</code>. Now it looks like this. <img src="../../ugly_term.jpg" alt="Terminal"> I&rsquo;m going to remove the colon, the dollar sign and add some spacing to make it look better. With the formatting added, my string is PS1= &ldquo;\d @ \u@\h &lt;\w&gt;&rdquo; and the prompt looks much better. <img src="../../nice_term.jpg" alt="Terminal"> In the next post, I will show you how to colorize your prompt and make it look even better.</p>
+<p>Mordy</p>
 
     </div>
     <div class="info post_meta">
@@ -151,27 +162,29 @@ If you want to make temporary changes then you can set the PS1 environment varia
       
     </div>
     <div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
+<script type="application/javascript">
+    var disqus_config = function () {
     
     
-    if (window.location.hostname == "localhost")
-        return;
-
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'tech-snippets';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tech-snippets" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   
 </section>
 
-        <a id="back_to_top" title="Go To Top" href="#">
+    <a id="back_to_top" title="Go To Top" href="#">
   <span>
     <svg viewBox="0 0 24 24">
       <path fill="none" d="M0 0h24v24H0z"></path>
@@ -180,7 +193,7 @@ If you want to make temporary changes then you can set the PS1 environment varia
   </span>
 </a>
 
-        <footer id="footer">
+    <footer id="footer">
   <p>
     <span>&copy; 2021 <a href="https://tech-snippets.web.app/" title="Mordy&#39;s Tech Snippets">Mordy&#39;s Tech Snippets</a> </span>
     <span>Built with <a rel="nofollow" target="_blank" href="https://gohugo.io">Hugo</a></span>
@@ -190,5 +203,28 @@ If you want to make temporary changes then you can set the PS1 environment varia
   <script src="https://tech-snippets.web.app/js/main.min.d36ef68c78feb357a5c05e0c28a47045a10fabf33345f1cb02f91d521272e329.js" integrity="sha256-0272jHj+s1elwF4MKKRwRaEPq/MzRfHLAvkdUhJy4yk=" crossorigin="anonymous" async></script>
 </footer>
 
-    </body>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+    <script>
+        
+        
+        var firebaseConfig = {
+            apiKey: "AIzaSyBEaIyQWVGm1zWJq5VR58qeQQyHSq2dkKc",
+            authDomain: "tech-snippets.firebaseapp.com",
+            projectId: "tech-snippets",
+            storageBucket: "tech-snippets.appspot.com",
+            messagingSenderId: "503586738998",
+            appId: "1:503586738998:web:2b2f4b5a8b499c4bc2d997",
+            measurementId: "G-1QENL1JY0D"
+        };
+        
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</body>
+
 </html>

@@ -8,13 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Jun 2021 12:02:50 -0400</lastBuildDate><atom:link href="https://tech-snippets.web.app/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Customizing your Bash Prompt</title>
+      <title>Customizing your Bash Prompt Pt. 1</title>
       <link>https://tech-snippets.web.app/posts/customizing-the-terminal/</link>
       <pubDate>Thu, 24 Jun 2021 12:02:50 -0400</pubDate>
       
       <guid>https://tech-snippets.web.app/posts/customizing-the-terminal/</guid>
-      <description>How to customize your Bash Prompt If you&amp;rsquo;re a developer there&amp;rsquo;s a big chance that you&amp;rsquo;re familiar with the terminal. The terminal&amp;rsquo;s used for:
- Git Running code  python main.py gcc/g++ main.cpp   Editing files  nano ~/.bashrc    You get the idea, the terminal&amp;rsquo;s a big part of a developers day and today, I&amp;rsquo;m going to show you how to customize it. If you want to make temporary changes then you can set the PS1 environment variable for only that session, for permanent changes you can edit the PS1 variable in your ~/.</description>
+      <description>How to customize your Bash Prompt Part 1 If you&amp;rsquo;re a developer there&amp;rsquo;s a big chance that you&amp;rsquo;re familiar with the terminal. The terminal&amp;rsquo;s used for:
+ Git  git push git pull git commit   Running code  python main.py gcc/g++ main.cpp   Editing files  nano ~/.bashrc    You get the idea; the terminal&amp;rsquo;s a big part of a developer&amp;rsquo;s day, and today, I&amp;rsquo;m going to show you how to customize it.</description>
     </item>
     
   </channel>
