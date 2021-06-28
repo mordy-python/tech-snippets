@@ -1,6 +1,6 @@
 baseURL = "https://tech-snippets.web.app/"
 languageCode = "en-us"
-title = "Mordy's Tech Blog"
+title = "Mordy's Tech Snippets"
 theme = "mixedpaper"
 pygmentsUseClasses = true
 
@@ -21,9 +21,9 @@ url = "/about/"
 weight = 1
 
 # [[menu.main]]
-# identifier = "tags"
-# name = "Tags"
-# url = "/tags/"
+# identifier = "posts"
+# name = "All Posts"
+# url = "/posts/"
 # weight = 2
 
 [[menu.main]]
