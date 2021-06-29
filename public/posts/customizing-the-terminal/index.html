@@ -94,7 +94,8 @@
 </li>
 </ul>
 <p>You get the idea; the terminal&rsquo;s a big part of a developer&rsquo;s day, and today, I&rsquo;m going to show you how to customize it.
-If you want to make temporary changes, you can set the PS1 environment variable for only that session; for permanent changes, you can edit the PS1 variable in your <code>~/.bashrc</code> file. My terminal currently looks like this. <img src="../../small_term.jpg" alt="Terminal"></p>
+If you want to make temporary changes, you can set the PS1 environment variable for only that session; for permanent changes, you can edit the PS1 variable in your <code>~/.bashrc</code> file. My terminal currently looks like this.</p>
+<p><img src="../../terminal_colored.jpg" alt="Terminal"></p>
 <p>My prompt has:</p>
 <ul>
 <li>Date</li>
@@ -103,16 +104,17 @@ If you want to make temporary changes, you can set the PS1 environment variable 
 <li>Current directory enclosed in angle brackets</li>
 <li>The git master branch name in parentheses</li>
 </ul>
-<p>My background color theme is from <a href="https://github.com/malteger/gitbash_mintty_solarized">this GitHub repo</a>, but the prompt I customized myself.</p>
+<p>My background color theme is from <a href="https://github.com/malteger/gitbash_mintty_solarized">this GitHub repo</a>, but I customized the prompt myself.</p>
 <h5 id="ok-on-to-the-prompt">Ok, on to the prompt</h5>
-<p>The prompt string in your <code>~/.bashrc</code> will start with <code>${debian_chroot:+($debian_chroot)}</code>, but we can ignore that. If you&rsquo;ve never customized the prompt, it will look like <code>PS1=&quot; \u@\h:\w$&quot;</code> these are escape sequences that tell bash what to put in the prompt.</p>
+<p>The prompt string in your <code>~/.bashrc</code> will start with <code>${debian_chroot:+($debian_chroot)}</code>, but we can ignore that. If you&rsquo;ve never customized the prompt, the prompt string will be <code>PS1=&quot; \u@\h:\w$&quot;</code>. These are escape sequences that tell bash what to put in the prompt.</p>
 <p>What the escape sequences mean:</p>
 <ul>
 <li><code>\u</code> means the logged-in user&rsquo;s username</li>
 <li><code>\h</code> is the hostname of the computer</li>
 <li><code>\w</code> is the current working directory</li>
+<li>The @ and : are not escaped.</li>
 </ul>
-<p>so <code>&quot;\u@\h:\w $&quot;</code> becomes <code>username@computername:workingdir$</code>. To add the date, time, customize the working dir, and add colors, we need to add more escape sequences.</p>
+<p>So <code>&quot;\u@\h:\w $&quot;</code> becomes <code>username@computername:workingdir$</code>. To add the date, time, customize the working dir, and add colors, we need to add more escape sequences.</p>
 <p>The escape sequence for the date is <code>\ d' the date format will be</code>Day of week Month Day`</p>
 <p>After using <code>\ d', my prompt looks like</code>Thu Jun 24 jwald@Momo-pc:~/blog$`</p>
 <p>There are three different escape sequences for time.</p>
@@ -135,7 +137,11 @@ If you want to make temporary changes, you can set the PS1 environment variable 
 </ul>
 <p>I picked the <code>\@</code> escape sequence, so now my prompt is <code>Thu Jun 24 12:53 jwald@Momo-pc:~/blog$</code>, and the prompt string is <code>PS1=&quot; \d \@ \u@\h:\w$&quot;</code></p>
 <p>My terminal looks like this now <img src="../../term_now.jpg" alt="Terminal"></p>
-<p>The file path doesn&rsquo;t look that amazing. It seems a little cramped, so let&rsquo;s customize that. I&rsquo;m going to add angle brackets &lt; and &gt; around the current directory path. Remember that <code>\w</code> is the working directory, so I&rsquo;m going to change my prompt string to look like this <code>PS1=&quot; \d \@ \u@\h:&lt;\w&gt;$&quot;</code>. Now it looks like this. <img src="../../ugly_term.jpg" alt="Terminal"> I&rsquo;m going to remove the colon, the dollar sign and add some spacing to make it look better. With the formatting added, my string is PS1= &ldquo;\d @ \u@\h &lt;\w&gt;&rdquo; and the prompt looks much better. <img src="../../nice_term.jpg" alt="Terminal"> In the next post, I will show you how to colorize your prompt and make it look even better.</p>
+<p>The file path doesn&rsquo;t look that amazing. It seems a little cramped, so let&rsquo;s customize that. I&rsquo;m going to add angle brackets &lt; and &gt; around the current directory path. Remember that <code>\w</code> is the working directory, so I&rsquo;m going to change my prompt string to look like this <code>PS1=&quot; \d \@ \u@\h:&lt;\w&gt;$&quot;</code>. Now it looks like this.</p>
+<p><img src="../../ugly_term.jpg" alt="Terminal"></p>
+<p>I&rsquo;m going to remove the colon, the dollar sign and add some spacing to make it look better. With the formatting added, my string is PS1= &ldquo;\d @ \u@\h &lt;\w&gt;&rdquo; and the prompt looks much better.</p>
+<p><img src="../../nice_term.jpg" alt="Terminal"></p>
+<p>In the next post, I will show you how to colorize your prompt and make it look even better.</p>
 <p>Mordy</p>
 
     </div>
