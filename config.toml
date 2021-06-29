@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "Mordy's Tech Snippets"
 theme = "mixedpaper"
 pygmentsUseClasses = true
+googleAnalytics = "UA-185006741-1"
+
+[params.comment]
+type = "disqus"
 
 disqusShortname = "tech-snippets"
 
@@ -33,7 +37,10 @@ url = "/archives/"
 weight = 3
 
 [privacy]
-[privacy.twitter]
+[privacy.disqus]
 disable = false
-enableDNT = false
-simple = false
+[privacy.googleAnalytics]
+anonymizeIP = true
+disable = false
+respectDoNotTrack = false
+useSessionStorage = false
