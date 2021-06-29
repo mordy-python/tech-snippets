@@ -3,6 +3,7 @@ title: "Customizing your Bash Prompt Pt. 1"
 date: 2021-06-24T12:02:50-04:00
 draft: false
 tags: ["terminal", "bash", "linux"]
+canonical_url: https://tech-snippets.web.app/posts/customizing-the-terminal/
 ---
 
 #### How to customize your Bash Prompt Part 1
