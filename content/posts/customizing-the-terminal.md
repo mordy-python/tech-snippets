@@ -31,7 +31,7 @@ My prompt has:
 - Current directory enclosed in angle brackets
 - The git master branch name in parentheses
 
-My background color theme is from [this GitHub repo](https://github.com/malteger/gitbash_mintty_solarized), but the prompt I customized myself.
+My background color theme is from [this GitHub repo](https://github.com/malteger/gitbash_mintty_solarized), but I customized the prompt myself.
 
 ##### Ok, on to the prompt
 
